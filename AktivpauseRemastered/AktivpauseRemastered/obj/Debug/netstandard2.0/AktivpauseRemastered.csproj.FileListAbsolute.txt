@@ -1,0 +1,15 @@
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\bin\Debug\netstandard2.0\AktivpauseRemastered.deps.json
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\bin\Debug\netstandard2.0\AktivpauseRemastered.dll
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\bin\Debug\netstandard2.0\ref\AktivpauseRemastered.dll
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\bin\Debug\netstandard2.0\AktivpauseRemastered.pdb
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\AktivpauseRemastered.csprojAssemblyReference.cache
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\AktivpauseRemastered.AssemblyInfoInputs.cache
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\AktivpauseRemastered.AssemblyInfo.cs
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\AktivpauseRemastered.dll
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\ref\AktivpauseRemastered.dll
+C:\Users\mic20\source\repos\earablesKIT\AktivpauseRemastered\AktivpauseRemastered\obj\Debug\netstandard2.0\AktivpauseRemastered.pdb
