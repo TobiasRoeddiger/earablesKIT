@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AktivpauseRemastered.Views.AboutPage.xaml", "Views/AboutPage.xaml", typeof(global::AktivpauseRemastered.Views.AboutPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AktivpauseRemastered.Views.MusicModePage.xaml", "Views/MusicModePage.xaml", typeof(global::AktivpauseRemastered.Views.MusicModePage))]
 
 namespace AktivpauseRemastered.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AboutPage.xaml")]
-    public partial class AboutPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MusicModePage.xaml")]
+    public partial class MusicModePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AboutPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MusicModePage));
         }
     }
 }
