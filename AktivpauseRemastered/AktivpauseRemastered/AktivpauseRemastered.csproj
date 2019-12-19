@@ -11,29 +11,30 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\CountModePage.xaml">
+    <EmbeddedResource Update="Views\DetailPages\CountModePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\DataOverviewPage.xaml">
+    <EmbeddedResource Update="Views\DetailPages\DataOverviewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ImportExportPage.xaml">
+    <EmbeddedResource Update="Views\DetailPages\ImportExportPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ListenAndPerformPage.xaml">
+    <EmbeddedResource Update="Views\DetailPages\ListenAndPerformPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MusicModePage.xaml">
+    <EmbeddedResource Update="Views\DetailPages\MusicModePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SettingsPage.xaml">
+    <EmbeddedResource Update="Views\DetailPages\SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\StepModePage.xaml">
+    <EmbeddedResource Update="Views\DetailPages\StepModePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
