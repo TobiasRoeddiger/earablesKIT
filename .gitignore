@@ -1,2 +1,6 @@
 
 .vs/
+*.Android/
+*.iOS/
+bin/
+obj/
