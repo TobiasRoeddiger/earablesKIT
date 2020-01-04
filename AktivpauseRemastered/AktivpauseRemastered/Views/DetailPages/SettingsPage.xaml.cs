@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AktivpauseRemastered.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,9 @@ namespace AktivpauseRemastered.Views
     {
         public SettingsPage()
         {
+            BindingContext = new SettingsViewModel();
             InitializeComponent();
-            Application.Current.MainPage.DisplayAlert("Alert", "Hello", "Cancel", "ok");//debug
+            //Application.Current.MainPage.DisplayAlert("Alert", "Hello", "Cancel", "ok");//debug
 
         }
     }

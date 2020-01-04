@@ -4,12 +4,32 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AktivpauseRemastered.Views.SettingsPage">
+             x:Class="AktivpauseRemastered.Views.SettingsPage"
+             Title="Settings (hc)">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        
+        <StackLayout VerticalOptions="Fill">
+            
+            <Label Text="Name: (hc)"/>
+            <Entry x:Name="NameEntry"
+                   Text="old val(hc)"/>
+            <Label Text="Language: (hc)"/>
+            <Picker x:Name="LanguagePicker"
+                    Title="Pick a language (hc)">
+            </Picker>
+            <Label Text="Step Length: (hc)"/>
+            <Entry x:Name="StepLengthEntry"
+                   Keyboard="Numeric"
+                   />
+
+            <Label Text="Sample Rate: (hc)"/>
+            <Picker x:Name="SampleRatePicker"
+                    Title="Pick a Samplerate (hc)"
+                    ItemsSource="{Binding SampleRateItemsSource}"
+                    ItemDisplayBinding = "{Binding .}"/>
+            <Button x:Name="SaveButton"
+                        Text="Save(hc)"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
