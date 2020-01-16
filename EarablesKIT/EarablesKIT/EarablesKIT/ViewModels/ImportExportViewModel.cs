@@ -12,70 +12,47 @@ namespace EarablesKIT.ViewModels
 {
     public class ImportExportViewModel
     {
+        public Command ImportCommand { get; private set; }
+        public Command ExportCommand { get; private set; }
+        public Command DeleteCommand { get; private set; }
 
-        public Command ExportCommand { get; set; }
-        public Command ImportCommand { get; set; } = new Command(() =>
+        public ImportExportViewModel()
         {
-            Debug.WriteLine("test");
-            Application.Current.Quit();
-        }, () => true);
-        public Command DeleteCommand
-        {
-            get
-            {
-                return new Command(
-                    () =>
-                        {
-                            LoadFileAsync();
-                        });
-            }
-            set { return; }
+            ImportCommand = new Command(() => ImportClicked());
+            ExportCommand = new Command(() => ExportClicked());
+            DeleteCommand = new Command(() => DeleteClicked());
         }
 
-        private async System.Threading.Tasks.Task<StreamReader> LoadFileAsync()
+        private async void ImportClicked()
         {
             try
             {
                 FileData fileData = await CrossFilePicker.Current.PickFile();
                 if (fileData == null)
-                    return null; // user canceled file picking
+                    return; // user canceled file picking
 
                 string fileName = fileData.FileName;
-                string contents = System.Text.Encoding.UTF8.GetString(fileData.DataArray);
-
-                System.Console.WriteLine("File name chosen: " + fileName);
-                System.Console.WriteLine("File data: " + contents);
+                //string contents = System.Text.Encoding.UTF8.GetString(fileData.DataArray); hier könnte theoretisch auch direkt der content gezogen werden.
+                await Application.Current.MainPage.DisplayAlert("debug display alert", "File name chosen:\n" + fileName,
+                    "ok"); //debug
             }
             catch (Exception ex)
             {
-                System.Console.WriteLine("Exception choosing file: " + ex.ToString());
+                System.Console.WriteLine("Exception choosing file: " +
+                                         ex.ToString()); //debug, sollte exception viewmodel machen.
             }
-
-            return null;
         }
 
-        private List<DBEntry> ParseCsv(StreamReader fileStream)
+        private void ExportClicked()
         {
-            /* File format:
-             Date,Dictionary
-             19398450,'PushUps=12,SitUps=34'
-             19398354,'PushUps=32,SitUps=4'
-             ...
-             */
 
-            var entries = new List<DBEntry>();
-            string line;
-
-            while ((line = fileStream.ReadLine()) != null)
-            {
-                var entry = DBEntry.ParseDBEntry(line);
-                if (entry != null)
-                {
-                    entries.Append(entry);
-                }
-            }
-
-            return entries;
         }
+
+        private void DeleteClicked()
+        {
+
+        }
+
     }
+
 }
