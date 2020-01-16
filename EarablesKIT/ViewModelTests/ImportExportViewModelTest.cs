@@ -11,7 +11,6 @@ namespace ViewModelTests
         {
             var vm = new ImportExportViewModel();
             vm.ImportCommand.Execute(null);
-
         }
     }
 }

@@ -3,13 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:EarablesKIT.ViewModels;assembly=EarablesKIT"
              mc:Ignorable="d"
-             x:Class="EarablesKIT.Views.ImportExportPage">
+             x:Class="EarablesKIT.Views.ImportExportPage" x:DataType="viewModels:ImportExportViewModel"
+             >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Import and Export" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Import" Command="{Binding ImportCommand}"/>
+            <Button Text="Export" Command="{Binding ExportCommand}"/>
+            <Button Text="Erase User Data" Command="{Binding DeleteCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

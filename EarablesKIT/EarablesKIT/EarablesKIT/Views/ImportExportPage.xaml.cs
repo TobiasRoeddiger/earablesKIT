@@ -15,6 +15,7 @@ namespace EarablesKIT.Views
         public ImportExportPage()
         {
             InitializeComponent();
+            BindingContext = new ViewModels.ImportExportViewModel();
         }
     }
 }
